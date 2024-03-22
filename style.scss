@@ -1,0 +1,223 @@
+$font-family: "Poppins", sans-serif;
+
+$primary-btn-color: linear-gradient(96.71deg, #5656f2 0%, #3333dc 101.64%);
+$primary-text-color: #19191b;
+$secondary-text-color: #696871;
+$third-text-color: #9d9da8;
+$four-text-color: #696974;
+
+$primary-color: #1111ff;
+$secondary-color: #5454d4;
+
+@mixin flexbox($justify: flex-start, $align: flex-start, $wrap: no-wrap, $direction: row) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+    flex-direction: $direction;
+}
+
+* {
+    font-family: $font-family;
+    box-sizing: border-box;
+}
+
+// global
+.container {
+    max-width: 1520px;
+}
+
+.btn {
+    background: $primary-btn-color;
+    color: white;
+    border-radius: 7px;
+    font-weight: 700;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 4px 10px 0px #e7e7fb;
+    &-large {
+        width: 250px;
+        height: 39px;
+    }
+    &-medium {
+        width: 191px;
+        height: 58px;
+    }
+    &-small {
+        width: 141px;
+        height: 45px;
+    }
+}
+
+.header {
+    height: 53px;
+    margin-top: 23px;
+    .container {
+        height: 100%;
+        margin: 0 auto;
+        @include flexbox($justify: space-between, $align: center);
+    }
+    &-left {
+        @include flexbox($align: center);
+        b {
+            font-size: 36.2px;
+            font-weight: 700;
+            color: #19191b;
+        }
+        .logo {
+            padding-right: 32px;
+            border-right: 2px solid #dedede;
+            margin-right: 27.5px;
+        }
+        .active {
+            color: $primary-color;
+            display: block;
+            border-bottom: 1.5px solid $primary-color;
+            padding-bottom: 10px;
+        }
+    }
+    &-right {
+        @include flexbox($align: center);
+        gap: 39px;
+    }
+    ul {
+        display: flex;
+        gap: 40px;
+        font-weight: 600;
+        li:hover {
+            a {
+                color: $secondary-color;
+            }
+        }
+    }
+}
+
+.banner {
+    margin-top: 114px;
+    @include flexbox($justify: center);
+    &__content {
+        width: 784px;
+    }
+    &__text {
+        width: 600px;
+        font-size: 65px;
+        color: $primary-text-color;
+        span {
+            color: $primary-color;
+        }
+    }
+
+    &__desc {
+        color: $secondary-text-color;
+        font-size: 21px;
+        font-weight: 500;
+        margin-top: 38.5px;
+        margin-bottom: 36px;
+        line-height: 39px;
+    }
+}
+form {
+    input {
+        height: 40px;
+    }
+    #textarea {
+        height: 152px;
+        width: 100%;
+    }
+}
+.introduction {
+    padding-bottom: 100px;
+    background: linear-gradient(180deg, rgba(248, 248, 255, 0) 0%, #f8f8ff 100%);
+    &__wrap {
+        max-width: 630px;
+        margin: 78px auto;
+    }
+    text-align: center;
+    &__caption {
+        color: #a8a5ca;
+        font-size: 16.3px;
+        font-weight: 500;
+        line-height: 30.26px;
+        letter-spacing: 4.146450519561768px;
+    }
+    &__title {
+        font-size: 50px;
+        font-weight: 700;
+        margin: 30px 0;
+        span {
+            color: $primary-color;
+        }
+    }
+
+    &__desc {
+        color: $secondary-text-color;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 39px;
+        margin-bottom: 33px;
+    }
+}
+
+.visa-card {
+    margin: 100px auto;
+    width: 500px;
+    height: 315px;
+    border-radius: 17.5px;
+    box-shadow: 0px 61.89071273803711px 88.69022369384766px 0px #0000001a;
+    padding: 37px 33px 37px 45px;
+    @include flexbox($direction: column, $justify: space-between);
+
+    &-physical {
+        background-color: white;
+    }
+    &__header {
+        width: 100%;
+        @include flexbox($justify: space-between);
+        font-size: 23px;
+        font-weight: 700;
+        color: $third-text-color;
+    }
+    &__chip {
+        margin-top: 30px;
+        margin-bottom: 27px;
+    }
+    &__code {
+        font-size: 35px;
+        font-weight: 700;
+        color: $four-text-color;
+    }
+    &__footer {
+        width: 100%;
+        @include flexbox($justify: space-between);
+        &__text-heading {
+            font-weight: 700;
+            color: $third-text-color;
+            line-height: 20px;
+            font-size: 16.5px;
+        }
+        &__text-sub {
+            font-size: 18px;
+            font-family: 700;
+            color: four-text-color;
+        }
+        &__valid {
+            @include flexbox();
+            gap: 30px;
+            p:first-child {
+                color: $third-text-color;
+                line-height: 20px;
+                font-weight: 700;
+            }
+        }
+    }
+    &-virtual {
+        color: white;
+        background: $primary-btn-color;
+        .visa-card__header,
+        .visa-card__code {
+            color: white;
+        }
+    }
+}

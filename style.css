@@ -1,0 +1,349 @@
+* {
+  font-family: "Poppins", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1520px;
+}
+
+.btn {
+  background: linear-gradient(96.71deg, #5656f2 0%, #3333dc 101.64%);
+  color: white;
+  border-radius: 7px;
+  font-weight: 700;
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  -webkit-box-shadow: 0px 4px 10px 0px #e7e7fb;
+          box-shadow: 0px 4px 10px 0px #e7e7fb;
+}
+
+.btn-large {
+  width: 250px;
+  height: 39px;
+}
+
+.btn-medium {
+  width: 191px;
+  height: 58px;
+}
+
+.btn-small {
+  width: 141px;
+  height: 45px;
+}
+
+.header {
+  height: 53px;
+  margin-top: 23px;
+}
+
+.header .container {
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.header-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.header-left b {
+  font-size: 36.2px;
+  font-weight: 700;
+  color: #19191b;
+}
+
+.header-left .logo {
+  padding-right: 32px;
+  border-right: 2px solid #dedede;
+  margin-right: 27.5px;
+}
+
+.header-left .active {
+  color: #1111ff;
+  display: block;
+  border-bottom: 1.5px solid #1111ff;
+  padding-bottom: 10px;
+}
+
+.header-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 39px;
+}
+
+.header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  font-weight: 600;
+}
+
+.header ul li:hover a {
+  color: #5454d4;
+}
+
+.banner {
+  margin-top: 114px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.banner__content {
+  width: 784px;
+}
+
+.banner__text {
+  width: 600px;
+  font-size: 65px;
+  color: #19191b;
+}
+
+.banner__text span {
+  color: #1111ff;
+}
+
+.banner__desc {
+  color: #696871;
+  font-size: 21px;
+  font-weight: 500;
+  margin-top: 38.5px;
+  margin-bottom: 36px;
+  line-height: 39px;
+}
+
+form input {
+  height: 40px;
+}
+
+form #textarea {
+  height: 152px;
+  width: 100%;
+}
+
+.introduction {
+  padding-bottom: 100px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(248, 248, 255, 0)), to(#f8f8ff));
+  background: linear-gradient(180deg, rgba(248, 248, 255, 0) 0%, #f8f8ff 100%);
+  text-align: center;
+}
+
+.introduction__wrap {
+  max-width: 630px;
+  margin: 78px auto;
+}
+
+.introduction__caption {
+  color: #a8a5ca;
+  font-size: 16.3px;
+  font-weight: 500;
+  line-height: 30.26px;
+  letter-spacing: 4.146450519561768px;
+}
+
+.introduction__title {
+  font-size: 50px;
+  font-weight: 700;
+  margin: 30px 0;
+}
+
+.introduction__title span {
+  color: #1111ff;
+}
+
+.introduction__desc {
+  color: #696871;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 39px;
+  margin-bottom: 33px;
+}
+
+.visa-card {
+  margin: 100px auto;
+  width: 500px;
+  height: 315px;
+  border-radius: 17.5px;
+  -webkit-box-shadow: 0px 61.89071273803711px 88.69022369384766px 0px #0000001a;
+          box-shadow: 0px 61.89071273803711px 88.69022369384766px 0px #0000001a;
+  padding: 37px 33px 37px 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.visa-card-physical {
+  background-color: white;
+}
+
+.visa-card__header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 23px;
+  font-weight: 700;
+  color: #9d9da8;
+}
+
+.visa-card__chip {
+  margin-top: 30px;
+  margin-bottom: 27px;
+}
+
+.visa-card__code {
+  font-size: 35px;
+  font-weight: 700;
+  color: #696974;
+}
+
+.visa-card__footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.visa-card__footer__text-heading {
+  font-weight: 700;
+  color: #9d9da8;
+  line-height: 20px;
+  font-size: 16.5px;
+}
+
+.visa-card__footer__text-sub {
+  font-size: 18px;
+  font-family: 700;
+  color: four-text-color;
+}
+
+.visa-card__footer__valid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 30px;
+}
+
+.visa-card__footer__valid p:first-child {
+  color: #9d9da8;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.visa-card-virtual {
+  color: white;
+  background: linear-gradient(96.71deg, #5656f2 0%, #3333dc 101.64%);
+}
+
+.visa-card-virtual .visa-card__header,
+.visa-card-virtual .visa-card__code {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
